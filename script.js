@@ -194,7 +194,7 @@ function handleSubmit(e) {
 
   // Simulate async send
   setTimeout(() => {
-    showToast("Thanks for the message !! I'll be in touch as early as possible", 'success');
+    showToast("Thanks for the message ! I'll be in touch as early as possible", 'success');
     btn.disabled    = false;
     txt.textContent = 'Send Message';
     e.target.reset();
