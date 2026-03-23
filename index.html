@@ -750,7 +750,9 @@
 
       </div>
 
-      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <!--<form class="contact-form reveal" onsubmit="handleSubmit(event)">-->
+        <form  class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="03ff1be2-ec96-40d3-a60a-9f529e21d1bf">
         <div class="frow">
           <div class="fw"><input type="text" id="fn" class="fi" placeholder=" " required/><label class="fl" for="fn">Your Name</label></div>
           <div class="fw"><input type="email" id="fe" class="fi" placeholder=" " required/><label class="fl" for="fe">Email Address</label></div>
