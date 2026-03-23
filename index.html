@@ -754,11 +754,11 @@
         <form  class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="03ff1be2-ec96-40d3-a60a-9f529e21d1bf">
         <div class="frow">
-          <div class="fw"><input type="text" id="fn" class="fi" placeholder=" " required/><label class="fl" for="fn">Your Name</label></div>
-          <div class="fw"><input type="email" id="fe" class="fi" placeholder=" " required/><label class="fl" for="fe">Email Address</label></div>
+          <div class="fw"><input type="text" id="fn" class="fi" placeholder=" " required  name="name"/><label class="fl" for="fn">Your Name</label></div>
+          <div class="fw"><input type="email" id="fe" class="fi" placeholder=" " required  name="email"/><label class="fl" for="fe">Email Address</label></div>
         </div>
-        <div class="fw"><input type="text" id="fs" class="fi" placeholder=" "/><label class="fl" for="fs">Subject / Project type</label></div>
-        <div class="fw"><textarea id="fm" class="fi fi-ta" rows="5" placeholder=" " required></textarea><label class="fl" for="fm">Tell me about your project</label></div>
+        <div class="fw"><input type="text" id="fs" class="fi" placeholder=" " required/><label class="fl" for="fs">Subject / Project type</label></div>
+        <div class="fw"><textarea id="fm" class="fi fi-ta" rows="5" placeholder=" " required name="message"></textarea><label class="fl" for="fm">Tell me about your project</label></div>
         <button type="submit" class="btn-primary" id="sub-btn">
           <span id="sub-txt">Send Message</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
