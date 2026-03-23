@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Paul Joy — Cloud Solution Architect</title>
+  <meta name="description" content="Cloud Solution Architect specialising in Fullstack Development, Automations, Cloud Infrastructure, and Security." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     PRELOADER
+══════════════════════════════════════════════ -->
+<div id="preloader">
+  <div class="pl-inner">
+    <div class="pl-logo"><span class="pl-bracket">[</span><span class="pl-text">JPJ</span><span class="pl-bracket">]</span></div>
+    <div class="pl-track"><div class="pl-fill" id="pl-fill"></div></div>
+    <span class="pl-label" id="pl-label">Initialising systems…</span>
+  </div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-bar"></div>
+
+<!-- ══════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════ -->
+<header id="site-nav">
+  <nav class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      John Paul Joy
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a class="nav-link" href="#about"     data-n="01">About</a></li>
+      <li><a class="nav-link" href="#expertise" data-n="02">Expertise</a></li>
+      <li><a class="nav-link" href="#projects"  data-n="03">Projects</a></li>
+      <li><a class="nav-link" href="#stack"     data-n="04">Stack</a></li>
+      <li><a class="nav-link" href="#contact"   data-n="05">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">
+      Let's Talk
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero" class="section hero-section">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="hero-container">
+  <!-- LEFT -->
+  <div class="hero-left">
+    <div class="hero-avail">
+      <span class="avail-dot"></span>
+      Available for new engagements
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="hl" style="--i:0">Building &amp; Securing</span>
+      <span class="hl hero-grad" style="--i:1">Enterprise Cloud</span>
+      <span class="hl" style="--i:2">At Scale.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Hi, I'm <strong style="color:var(--t1)">John Paul Joy</strong> — a Cloud Solution Architect &amp; Microsoft specialist with 8+ years delivering enterprise-grade infrastructure, Power Platform solutions, and end-to-end digital transformation on Azure, M365, and Dynamics 365.
+    </p>
+
+    <div class="spec-wrap">
+      <span class="spec-prefix">I specialise in</span>
+      <div class="spec-tags">
+        <span class="stag" style="--sc:#38bdf8">Azure</span>
+        <span class="stag" style="--sc:#0ea5e9">SharePoint</span>
+        <span class="stag" style="--sc:#7dd3fc">M365</span>
+        <span class="stag" style="--sc:#a855f7">D365 (CE)</span>
+        <span class="stag" style="--sc:#f472b6">Frontend</span>
+        <span class="stag" style="--sc:#fbbf24">Backend</span>
+        <span class="stag" style="--sc:#e879f9">AI &amp; Copilot</span>
+        <span class="stag" style="--sc:#4ade80">FinOps</span>
+        <span class="stag stag-group">
+          <span class="stag-main" style="--sc:#34d399">Power Platform</span>
+          <span class="stag-subs">
+            <span style="--sc:#34d399">Canvas</span>
+            <span style="--sc:#34d399">Model-Driven</span>
+            <span style="--sc:#34d399">Automation</span>
+            <span style="--sc:#34d399">Pages</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#expertise" class="btn-primary">
+        View Expertise
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- RIGHT — Cloud Architecture SVG -->
+  <div class="hero-right">
+    <div class="arch-shell">
+      <div class="cpills-row">
+        <div class="cpill cpill-azure">Azure</div>
+        <div class="cpill cpill-aws">M365</div>
+        <div class="cpill cpill-gcp">D365 (CE)</div>
+        <div class="cpill cpill-pp">Power Platform</div>
+      </div>
+      <svg viewBox="0 0 360 460" class="arch-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <linearGradient id="gblue" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(56,189,248,0.18)"/>
+            <stop offset="100%" stop-color="rgba(56,189,248,0.05)"/>
+          </linearGradient>
+          <linearGradient id="ggreen" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(52,211,153,0.18)"/>
+            <stop offset="100%" stop-color="rgba(52,211,153,0.05)"/>
+          </linearGradient>
+          <linearGradient id="gamber" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(251,191,36,0.18)"/>
+            <stop offset="100%" stop-color="rgba(251,191,36,0.05)"/>
+          </linearGradient>
+          <!-- motion paths -->
+          <path id="mp1" d="M180,62 C160,85 110,100 110,122"/>
+          <path id="mp2" d="M180,62 C200,85 250,100 250,122"/>
+          <path id="mp3" d="M110,142 C110,165 180,180 180,202"/>
+          <path id="mp4" d="M250,142 C250,165 180,180 180,202"/>
+          <path id="mp5" d="M180,222 C155,250 90,270 90,302"/>
+          <path id="mp6" d="M180,222 L180,302"/>
+          <path id="mp7" d="M180,222 C205,250 270,270 270,302"/>
+        </defs>
+
+        <!-- Layer labels -->
+        <text x="12" y="48"  fill="rgba(148,180,230,0.85)" font-size="8" font-family="JetBrains Mono" letter-spacing="2">EDGE</text>
+        <text x="12" y="138" fill="rgba(148,180,230,0.85)" font-size="8" font-family="JetBrains Mono" letter-spacing="2">GATEWAY</text>
+        <text x="12" y="244" fill="rgba(148,180,230,0.85)" font-size="8" font-family="JetBrains Mono" letter-spacing="2">COMPUTE</text>
+        <text x="12" y="362" fill="rgba(148,180,230,0.85)" font-size="8" font-family="JetBrains Mono" letter-spacing="2">DATA</text>
+
+        <!-- Dividers -->
+        <line x1="52" y1="58"  x2="340" y2="58"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <line x1="52" y1="152" x2="340" y2="152" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <line x1="52" y1="254" x2="340" y2="254" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <line x1="52" y1="374" x2="340" y2="374" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+        <!-- Flow lines -->
+        <use href="#mp1" stroke="rgba(56,189,248,0.65)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp2" stroke="rgba(56,189,248,0.65)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp3" stroke="rgba(56,189,248,0.55)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp4" stroke="rgba(56,189,248,0.55)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp5" stroke="rgba(52,211,153,0.65)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp6" stroke="rgba(52,211,153,0.65)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <use href="#mp7" stroke="rgba(251,191,36,0.65)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <line x1="90"  y1="322" x2="90"  y2="384" stroke="rgba(52,211,153,0.58)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <line x1="180" y1="322" x2="180" y2="384" stroke="rgba(52,211,153,0.58)" stroke-width="1.8" stroke-dasharray="5 4"/>
+        <line x1="270" y1="322" x2="270" y2="384" stroke="rgba(251,191,36,0.58)" stroke-width="1.8" stroke-dasharray="5 4"/>
+
+        <!-- Animated packets -->
+        <circle r="3.5" fill="#38bdf8" filter="url(#glow)"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0s"><mpath href="#mp1"/></animateMotion></circle>
+        <circle r="3.5" fill="#38bdf8" filter="url(#glow)"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.1s"><mpath href="#mp2"/></animateMotion></circle>
+        <circle r="3.5" fill="#38bdf8" filter="url(#glow)"><animateMotion dur="2s"   repeatCount="indefinite" begin="0.4s"><mpath href="#mp3"/></animateMotion></circle>
+        <circle r="3.5" fill="#38bdf8" filter="url(#glow)"><animateMotion dur="2s"   repeatCount="indefinite" begin="1.4s"><mpath href="#mp4"/></animateMotion></circle>
+        <circle r="3"   fill="#34d399" filter="url(#glow)"><animateMotion dur="2.4s" repeatCount="indefinite" begin="0.2s"><mpath href="#mp5"/></animateMotion></circle>
+        <circle r="3"   fill="#34d399" filter="url(#glow)"><animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s"><mpath href="#mp6"/></animateMotion></circle>
+        <circle r="3"   fill="#fbbf24" filter="url(#glow)"><animateMotion dur="2.4s" repeatCount="indefinite" begin="0.8s"><mpath href="#mp7"/></animateMotion></circle>
+
+        <!-- Internet node -->
+        <g transform="translate(138,22)">
+          <rect width="84" height="36" rx="9" fill="url(#gblue)" stroke="rgba(56,189,248,0.5)" stroke-width="1.2"/>
+          <circle cx="18" cy="18" r="7" stroke="rgba(56,189,248,0.9)" stroke-width="1.2" fill="none"/>
+          <ellipse cx="18" cy="18" rx="3.5" ry="7" stroke="rgba(56,189,248,0.6)" stroke-width="1" fill="none"/>
+          <line x1="11" y1="18" x2="25" y2="18" stroke="rgba(56,189,248,0.5)" stroke-width="1"/>
+          <text x="32" y="13" fill="rgba(116,148,196,0.7)" font-size="7" font-family="JetBrains Mono">client</text>
+          <text x="32" y="26" fill="#f0f6ff" font-size="8.5" font-family="JetBrains Mono" font-weight="700">Internet</text>
+        </g>
+
+        <!-- CDN node -->
+        <g transform="translate(74,102)">
+          <rect width="72" height="36" rx="9" fill="url(#gblue)" stroke="rgba(56,189,248,0.35)" stroke-width="1.2"/>
+          <path d="M12 20 C12 13 17 10 20 14 C22 10 28 9 30 14 C34 13 37 18 34 22 L12 22 Z" stroke="rgba(56,189,248,0.8)" stroke-width="1" fill="rgba(56,189,248,0.08)"/>
+          <text x="40" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">edge</text>
+          <text x="40" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">CDN</text>
+        </g>
+
+        <!-- WAF node -->
+        <g transform="translate(214,102)">
+          <rect width="72" height="36" rx="9" fill="url(#gblue)" stroke="rgba(56,189,248,0.35)" stroke-width="1.2"/>
+          <path d="M20 10 L28 13 L28 20 C28 24 24 27 20 28 C16 27 12 24 12 20 L12 13 Z" stroke="rgba(56,189,248,0.8)" stroke-width="1" fill="rgba(56,189,248,0.08)"/>
+          <path d="M16 19 L18.5 21.5 L24 16" stroke="rgba(56,189,248,0.9)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="34" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">security</text>
+          <text x="34" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">WAF</text>
+        </g>
+
+        <!-- API Gateway node -->
+        <g transform="translate(145,184)">
+          <rect width="70" height="36" rx="9" fill="url(#gblue)" stroke="rgba(56,189,248,0.55)" stroke-width="1.5"/>
+          <text x="8" y="15" fill="rgba(56,189,248,0.5)" font-size="8" font-family="JetBrains Mono">&lt;&gt;</text>
+          <text x="8" y="28" fill="rgba(56,189,248,0.9)" font-size="9" font-family="JetBrains Mono" font-weight="700">API GW</text>
+          <circle cx="58" cy="10" r="4" fill="rgba(52,211,153,0.15)" stroke="rgba(52,211,153,0.6)" stroke-width="1"/>
+          <circle cx="58" cy="10" r="2" fill="#34d399"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+        </g>
+
+        <!-- Auth service -->
+        <g transform="translate(48,282)">
+          <rect width="84" height="36" rx="9" fill="url(#ggreen)" stroke="rgba(52,211,153,0.35)" stroke-width="1.2"/>
+          <path d="M14 14 L14 22 Q14 26 18 26 L22 26 Q26 26 26 22 L26 14" stroke="rgba(52,211,153,0.8)" stroke-width="1.2" fill="none"/>
+          <path d="M12 17 Q12 11 20 11 Q28 11 28 17" stroke="rgba(52,211,153,0.5)" stroke-width="1" fill="none"/>
+          <text x="34" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">svc</text>
+          <text x="34" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">Auth</text>
+        </g>
+
+        <!-- App service -->
+        <g transform="translate(142,282)">
+          <rect width="76" height="36" rx="9" fill="url(#ggreen)" stroke="rgba(52,211,153,0.35)" stroke-width="1.2"/>
+          <rect x="10" y="12" width="16" height="12" rx="3" stroke="rgba(52,211,153,0.8)" stroke-width="1.2" fill="rgba(52,211,153,0.08)"/>
+          <path d="M14 16 L16 18 L14 20M18 20 L20 20" stroke="rgba(52,211,153,0.8)" stroke-width="1" stroke-linecap="round"/>
+          <text x="32" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">svc</text>
+          <text x="32" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">App</text>
+        </g>
+
+        <!-- Worker service -->
+        <g transform="translate(228,282)">
+          <rect width="84" height="36" rx="9" fill="url(#ggreen)" stroke="rgba(52,211,153,0.35)" stroke-width="1.2"/>
+          <circle cx="18" cy="18" r="4" stroke="rgba(52,211,153,0.8)" stroke-width="1.2" fill="none"/>
+          <path d="M18 10 L18 13M18 23 L18 26M10 18 L13 18M23 18 L26 18" stroke="rgba(52,211,153,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+          <text x="32" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">svc</text>
+          <text x="32" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">Worker</text>
+        </g>
+
+        <!-- PostgreSQL -->
+        <g transform="translate(48,384)">
+          <rect width="84" height="36" rx="9" fill="url(#gamber)" stroke="rgba(251,191,36,0.35)" stroke-width="1.2"/>
+          <ellipse cx="18" cy="14" rx="6" ry="3" stroke="rgba(251,191,36,0.8)" stroke-width="1.2" fill="rgba(251,191,36,0.06)"/>
+          <line x1="12" y1="14" x2="12" y2="22" stroke="rgba(251,191,36,0.5)" stroke-width="1.2"/>
+          <line x1="24" y1="14" x2="24" y2="22" stroke="rgba(251,191,36,0.5)" stroke-width="1.2"/>
+          <ellipse cx="18" cy="22" rx="6" ry="3" stroke="rgba(251,191,36,0.8)" stroke-width="1.2" fill="rgba(251,191,36,0.06)"/>
+          <text x="32" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">sql</text>
+          <text x="32" y="25" fill="#f0f6ff" font-size="8" font-family="JetBrains Mono" font-weight="700">PostgreSQL</text>
+        </g>
+
+        <!-- Redis -->
+        <g transform="translate(142,384)">
+          <rect width="76" height="36" rx="9" fill="url(#gamber)" stroke="rgba(251,191,36,0.35)" stroke-width="1.2"/>
+          <path d="M20 10 L14 20 L19 20 L16 28 L24 17 L19 17 Z" stroke="rgba(251,191,36,0.9)" stroke-width="1.2" fill="rgba(251,191,36,0.1)" stroke-linejoin="round"/>
+          <text x="30" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">cache</text>
+          <text x="30" y="25" fill="#f0f6ff" font-size="9" font-family="JetBrains Mono" font-weight="700">Redis</text>
+        </g>
+
+        <!-- S3 / Blob -->
+        <g transform="translate(228,384)">
+          <rect width="84" height="36" rx="9" fill="url(#gamber)" stroke="rgba(251,191,36,0.35)" stroke-width="1.2"/>
+          <path d="M12 24 C12 16 12 14 18 14 C24 14 24 16 24 24 Z" stroke="rgba(251,191,36,0.8)" stroke-width="1.2" fill="rgba(251,191,36,0.06)"/>
+          <ellipse cx="18" cy="14" rx="6" ry="2.5" stroke="rgba(251,191,36,0.8)" stroke-width="1.2" fill="rgba(251,191,36,0.06)"/>
+          <text x="32" y="13" fill="rgba(116,148,196,0.7)" font-size="7.5" font-family="JetBrains Mono">object</text>
+          <text x="32" y="25" fill="#f0f6ff" font-size="8" font-family="JetBrains Mono" font-weight="700">S3 / Blob</text>
+        </g>
+
+        <!-- Corner badges removed -->
+      </svg>
+
+    </div>
+  </div>
+  </div><!-- /hero-container -->
+</section>
+
+<!-- ══════════════════════════════════════════════
+     STATS STRIP
+══════════════════════════════════════════════ -->
+<div class="stats-strip" id="stats-strip">
+  <div style="display:flex;justify-content:center;padding:0 32px"><div class="stats-inner">
+    <div class="stat-c">
+      <span class="sn">50</span><span class="su">+</span>
+      <span class="sk">Projects Delivered</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-c">
+      <span class="sn">8</span><span class="su">+ yrs</span>
+      <span class="sk">Experience</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-c">
+      <span class="sn">3</span><span class="su">+</span>
+      <span class="sk">Cloud Platforms</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-c">
+      <span class="sn">15</span><span class="su">+</span>
+      <span class="sk">Certifications</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-c">
+      <span class="sn">140</span><span class="su">+</span>
+      <span class="sk">Automations Built</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-c">
+      <span class="sn">2</span><span class="su"> PB</span>
+      <span class="sk">Cloud Migrations</span>
+    </div>
+
+  </div></div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="ey-n">01</span><span class="ey-r"></span><span class="ey-t">About Me</span></div>
+    <div class="about-grid">
+
+      <div class="about-visual">
+        <div class="av-card">
+          <div class="av-photo av-photo-real">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QMWRXhpZgAATU0AKgAAAAgABAE7AAIAAAAZAAABSodpAAQAAAABAAABZJydAAEAAAAyAAAC3OocAAcAAAEMAAAAPgAAAAAc6gAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASm9obiBQYXVsIENoZWVyYW5nYWwgSm95AAAABZADAAIAAAAUAAACspAEAAIAAAAUAAACxpKRAAIAAAADNTgAAJKSAAIAAAADNTgAAOocAAcAAAEMAAABpgAAAAAc6gAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjAyNToxMjowMSAyMDo0MzoyNQAyMDI1OjEyOjAxIDIwOjQzOjI1AAAASgBvAGgAbgAgAFAAYQB1AGwAIABDAGgAZQBlAHIAYQBuAGcAYQBsACAASgBvAHkAAAD/4QQraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIvPjxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSJ1dWlkOmZhZjViZGQ1LWJhM2QtMTFkYS1hZDMxLWQzM2Q3NTE4MmYxYiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj48eG1wOkNyZWF0ZURhdGU+MjAyNS0xMi0wMVQyMDo0MzoyNS41Nzg8L3htcDpDcmVhdGVEYXRlPjwvcmRmOkRlc2NyaXB0aW9uPjxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSJ1dWlkOmZhZjViZGQ1LWJhM2QtMTFkYS1hZDMxLWQzM2Q3NTE4MmYxYiIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj48ZGM6Y3JlYXRvcj48cmRmOlNlcSB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPjxyZGY6bGk+Sm9obiBQYXVsIENoZWVyYW5nYWwgSm95PC9yZGY6bGk+PC9yZGY6U2VxPg0KCQkJPC9kYzpjcmVhdG9yPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg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" alt="John Paul Joy" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;display:block;"/>
+          </div>
+          <div class="av-certs">
+            <div class="av-cert"><span class="cert-dot" style="--cc:#0ea5e9"></span>Azure Solutions Architect Expert</div>
+            <div class="av-cert"><span class="cert-dot" style="--cc:#38bdf8"></span>Microsoft 365 Enterprise Admin</div>
+            <div class="av-cert"><span class="cert-dot" style="--cc:#a855f7"></span>Power Platform Functional Consultant</div>
+            <div class="av-cert"><span class="cert-dot" style="--cc:#fbbf24"></span>Dynamics 365 Functional Consultant</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="about-statement">
+          I architect enterprise Microsoft cloud solutions that are built to scale, hardened to resist,
+          and designed to delight. From Power Platform automation to zero-trust Azure security
+          models — I bridge the gap between infrastructure and business outcomes.
+        </p>
+        <p class="about-p">
+          With deep expertise across the Microsoft cloud ecosystem, I help organisations modernise
+          legacy systems, automate operational complexity, and build resilient platforms on Azure,
+          M365, and Dynamics 365. I believe the best architecture is invisible — it simply works.
+        </p>
+        <div class="core-stack">
+          <span class="cs-label">Core Stack</span>
+          <div class="cs-chips">
+            <span>Azure</span>
+            <span>M365</span>
+            <span>SharePoint</span>
+            <span>D365 CE</span>
+            <span>Power Apps</span>
+            <span>Power Automate</span>
+            <span>Power BI</span>
+            <span>Power Pages</span>
+            <span>Entra ID</span>
+            <span>Microsoft Teams</span>
+            <span>Intune</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     EXPERTISE
+══════════════════════════════════════════════ -->
+<section id="expertise" class="section section-alt">
+  <div class="container">
+    <div class="eyebrow"><span class="ey-n">02</span><span class="ey-r"></span><span class="ey-t">Expertise</span></div>
+    <div class="sec-intro">
+      <h2 class="sec-h2">What I bring to every project</h2>
+      <p class="sec-p">Click any domain to explore its subsections. More areas will be added over time.</p>
+    </div>
+
+    <div class="domains" id="expertise-grid">
+
+      <!-- FULLSTACK -->
+      <article class="domain" data-d="fullstack">
+        <div class="d-head" onclick="toggleDomain(this)">
+          <div class="d-icon" style="--dc:rgba(56,189,248,0.9)">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 16L8 20L12 24M28 16L32 20L28 24M18 26L22 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div class="d-meta">
+            <h3 class="d-name">Fullstack Development</h3>
+            <p class="d-tag">End-to-end product engineering</p>
+          </div>
+          <span class="d-count">4 areas</span>
+          <div class="d-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+        </div>
+        <div class="d-panel">
+          <div class="d-panel-in">
+            <div class="si"><div class="si-dot" style="--sc:#38bdf8"></div><div class="si-body"><h4>Frontend Engineering</h4><p>React, Next.js, Vue 3 — pixel-perfect, accessible, performance-first UIs with modern state management and design systems.</p><div class="si-chips"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Vite</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#38bdf8"></div><div class="si-body"><h4>Backend &amp; APIs</h4><p>Microservices, RESTful &amp; GraphQL APIs, and event-driven backends built for durability and horizontal scale.</p><div class="si-chips"><span>Node.js</span><span>Python</span><span>Go</span><span>FastAPI</span><span>GraphQL</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#38bdf8"></div><div class="si-body"><h4>Databases &amp; Data Stores</h4><p>Relational, document, key-value, vector, and time-series databases modelled for query performance and operational simplicity.</p><div class="si-chips"><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>DynamoDB</span><span>ClickHouse</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#38bdf8"></div><div class="si-body"><h4>Mobile Development</h4><p>Cross-platform mobile apps with native-grade performance, deep-linking, and offline-first architecture.</p><div class="si-chips"><span>React Native</span><span>Flutter</span><span>Expo</span><span>PWA</span></div></div></div>
+            <!-- ADD MORE SUB-ITEMS HERE -->
+          </div>
+        </div>
+      </article>
+
+      <!-- AUTOMATIONS -->
+      <article class="domain" data-d="automations">
+        <div class="d-head" onclick="toggleDomain(this)">
+          <div class="d-icon" style="--dc:rgba(52,211,153,0.9)">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><path d="M20 6V10M20 30V34M6 20H10M30 20H34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M14 8L18 14M26 26L22 32M8 26L14 22M26 14L32 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="d-meta">
+            <h3 class="d-name">Automations</h3>
+            <p class="d-tag">Eliminate manual toil at scale</p>
+          </div>
+          <span class="d-count">4 areas</span>
+          <div class="d-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+        </div>
+        <div class="d-panel">
+          <div class="d-panel-in">
+            <div class="si"><div class="si-dot" style="--sc:#34d399"></div><div class="si-body"><h4>CI/CD Pipelines</h4><p>End-to-end delivery pipelines with automated testing, security scanning, canary deployments, and rollback strategies.</p><div class="si-chips"><span>GitHub Actions</span><span>Jenkins</span><span>ArgoCD</span><span>Flux</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#34d399"></div><div class="si-body"><h4>Infrastructure as Code</h4><p>Declarative, version-controlled infra provisioning with drift detection, modular design, and automated compliance checks.</p><div class="si-chips"><span>Terraform</span><span>Pulumi</span><span>Ansible</span><span>CDK</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#34d399"></div><div class="si-body"><h4>Workflow Orchestration</h4><p>Multi-step workflows, complex DAGs, scheduled jobs, and data pipelines with retry logic, alerting, and audit trails.</p><div class="si-chips"><span>Airflow</span><span>Step Functions</span><span>Temporal</span><span>Prefect</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#34d399"></div><div class="si-body"><h4>RPA &amp; AI Agents</h4><p>Intelligent process automation using LLM-powered agents, browser automation, and low-code platforms.</p><div class="si-chips"><span>n8n</span><span>LangChain</span><span>Playwright</span><span>Power Automate</span></div></div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CLOUD INFRA -->
+      <article class="domain" data-d="cloud">
+        <div class="d-head" onclick="toggleDomain(this)">
+          <div class="d-icon" style="--dc:rgba(168,85,247,0.9)">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><path d="M10 26C6 26 4 23 4 20C4 17 6 15 9 14.5C9.5 10 13 7 17 7C20 7 22.5 8.5 24 11C24.5 10.8 25 10.8 25.5 10.8C29 10.8 32 13.5 32 17C35 17.5 36 20 36 22C36 24.5 34 26.5 31.5 26.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M16 32L16 22M24 32L24 22M12 28L20 34L28 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="d-meta">
+            <h3 class="d-name">Cloud Infrastructure</h3>
+            <p class="d-tag">Resilient, cost-optimised platforms</p>
+          </div>
+          <span class="d-count">5 areas</span>
+          <div class="d-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+        </div>
+        <div class="d-panel">
+          <div class="d-panel-in">
+            <div class="si"><div class="si-dot" style="--sc:#a855f7"></div><div class="si-body"><h4>Multi-Cloud Architecture</h4><p>Vendor-agnostic strategies across AWS, Azure, and GCP with unified identity, networking, and observability.</p><div class="si-chips"><span>AWS</span><span>Azure</span><span>GCP</span><span>Crossplane</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#a855f7"></div><div class="si-body"><h4>Containerisation &amp; Orchestration</h4><p>Production Kubernetes clusters, service meshes, auto-scaling, and GitOps-driven workload management.</p><div class="si-chips"><span>EKS / AKS / GKE</span><span>Helm</span><span>Istio</span><span>Karpenter</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#a855f7"></div><div class="si-body"><h4>Serverless &amp; Edge Computing</h4><p>Event-driven, pay-per-use compute from AWS Lambda to global edge deployments for ultra-low latency workloads.</p><div class="si-chips"><span>Lambda</span><span>Cloud Run</span><span>Cloudflare Workers</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#a855f7"></div><div class="si-body"><h4>Networking &amp; CDN</h4><p>VPCs, private endpoints, WAF, global load balancing, PrivateLink, and BGP routing across regions.</p><div class="si-chips"><span>VPC</span><span>Route 53</span><span>CloudFront</span><span>Azure Front Door</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#a855f7"></div><div class="si-body"><h4>Observability &amp; SRE</h4><p>Full-stack monitoring, distributed tracing, SLO-driven reliability, and incident-response playbooks.</p><div class="si-chips"><span>Datadog</span><span>Grafana</span><span>OpenTelemetry</span><span>PagerDuty</span></div></div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SECURITY -->
+      <article class="domain" data-d="security">
+        <div class="d-head" onclick="toggleDomain(this)">
+          <div class="d-icon" style="--dc:rgba(251,191,36,0.9)">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><path d="M20 5L34 10L34 22C34 30 27 36 20 38C13 36 6 30 6 22L6 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="d-meta">
+            <h3 class="d-name">Security</h3>
+            <p class="d-tag">Zero-trust, compliance-ready systems</p>
+          </div>
+          <span class="d-count">4 areas</span>
+          <div class="d-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+        </div>
+        <div class="d-panel">
+          <div class="d-panel-in">
+            <div class="si"><div class="si-dot" style="--sc:#fbbf24"></div><div class="si-body"><h4>Zero-Trust Architecture</h4><p>Identity-first security — no implicit trust, continuous verification, least-privilege access enforced at every layer.</p><div class="si-chips"><span>IAM</span><span>OIDC</span><span>mTLS</span><span>SPIFFE/SPIRE</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#fbbf24"></div><div class="si-body"><h4>Cloud Security Posture (CSPM)</h4><p>Automated compliance checks, policy-as-code guardrails, and real-time drift detection across cloud environments.</p><div class="si-chips"><span>AWS Security Hub</span><span>Defender for Cloud</span><span>Wiz</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#fbbf24"></div><div class="si-body"><h4>AppSec &amp; DevSecOps</h4><p>Shift-left security in CI/CD — SAST, DAST, SCA, container scanning, and secrets management baked into pipelines.</p><div class="si-chips"><span>Snyk</span><span>Semgrep</span><span>Vault</span><span>Trivy</span></div></div></div>
+            <div class="si"><div class="si-dot" style="--sc:#fbbf24"></div><div class="si-body"><h4>Compliance &amp; Governance</h4><p>Building regulatory compliance into systems from day one — SOC 2, ISO 27001, GDPR, HIPAA, and PCI-DSS.</p><div class="si-chips"><span>SOC 2</span><span>ISO 27001</span><span>GDPR</span><span>HIPAA</span></div></div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ╔═══════════════════════════════════════════════╗
+           ║  ADD NEW DOMAIN ARTICLES HERE (copy above)   ║
+           ╚═══════════════════════════════════════════════╝ -->
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROJECTS — BENTO GRID
+══════════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="ey-n">03</span><span class="ey-r"></span><span class="ey-t">Selected Projects</span></div>
+    <div class="sec-intro">
+      <h2 class="sec-h2">Built for scale, hardened for production</h2>
+    </div>
+
+    <!-- Project Filter Tabs -->
+    <div class="proj-tabs" id="proj-tabs">
+      <button class="ptab active" data-filter="all">All Projects</button>
+      <button class="ptab" data-filter="azure">Azure</button>
+      <button class="ptab" data-filter="m365">M365</button>
+      <button class="ptab" data-filter="d365">D365</button>
+      <button class="ptab" data-filter="security">Security</button>
+    </div>
+
+    <div class="bento" id="projects-grid">
+
+      <!-- FEATURED WIDE — Azure Migration -->
+      <div class="bc bc-wide reveal" data-cat="azure">
+        <div class="bc-status"><span class="status-dot status-live"></span>Live in Production</div>
+        <div class="bc-top">
+          <span class="bc-dom">Azure · Enterprise Migration</span>
+          <span class="bc-yr">2024</span>
+        </div>
+        <h3 class="bc-title">Enterprise Azure Cloud Migration</h3>
+        <p class="bc-desc">Led end-to-end migration of a 500-user enterprise from on-premises Active Directory and file servers to Azure AD, SharePoint Online, and Azure IaaS — zero downtime, 6-week delivery.</p>
+        <div class="bc-progress-wrap">
+          <div class="bc-progress-label"><span>Migration Completion</span><span>100%</span></div>
+          <div class="bc-progress-bar"><div class="bc-progress-fill" style="--pct:100%; --pc:#38bdf8"></div></div>
+          <div class="bc-progress-label"><span>User Adoption Rate</span><span>94%</span></div>
+          <div class="bc-progress-bar"><div class="bc-progress-fill" style="--pct:94%; --pc:#34d399"></div></div>
+          <div class="bc-progress-label"><span>Cost Reduction vs On-Prem</span><span>58%</span></div>
+          <div class="bc-progress-bar"><div class="bc-progress-fill" style="--pct:58%; --pc:#a855f7"></div></div>
+        </div>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">500+</span><span class="bcn-k">Users Migrated</span></div>
+          <div class="bcn"><span class="bcn-v">0</span><span class="bcn-k">Downtime Hours</span></div>
+          <div class="bcn"><span class="bcn-v">6 wks</span><span class="bcn-k">Delivery</span></div>
+          <div class="bcn"><span class="bcn-v">58%</span><span class="bcn-k">Cost Saved</span></div>
+        </div>
+        <div class="bc-chips"><span>Azure AD</span><span>SharePoint Online</span><span>Azure IaaS</span><span>Intune</span><span>Teams</span></div>
+      </div>
+
+      <!-- TALL — M365 Modern Workplace -->
+      <div class="bc bc-tall reveal" data-cat="m365">
+        <div class="bc-status"><span class="status-dot status-live"></span>Live in Production</div>
+        <div class="bc-top">
+          <span class="bc-dom">M365 · Modern Workplace</span>
+          <span class="bc-yr">2024</span>
+        </div>
+        <h3 class="bc-title">Microsoft 365 Modern Workplace Rollout</h3>
+        <p class="bc-desc">Designed and deployed a Microsoft 365 modern workplace transformation for a 1,200-seat manufacturing company — Teams telephony, SharePoint intranet, OneDrive governance, and Viva Engage adoption campaigns.</p>
+        <div class="bc-progress-wrap">
+          <div class="bc-progress-label"><span>Teams Adoption</span><span>97%</span></div>
+          <div class="bc-progress-bar"><div class="bc-progress-fill" style="--pct:97%; --pc:#38bdf8"></div></div>
+          <div class="bc-progress-label"><span>SharePoint Intranet Usage</span><span>88%</span></div>
+          <div class="bc-progress-bar"><div class="bc-progress-fill" style="--pct:88%; --pc:#34d399"></div></div>
+        </div>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">1,200</span><span class="bcn-k">Seats</span></div>
+          <div class="bcn"><span class="bcn-v">97%</span><span class="bcn-k">Adoption</span></div>
+        </div>
+        <div class="bc-chips"><span>Teams</span><span>SharePoint</span><span>OneDrive</span><span>Viva</span><span>Intune</span></div>
+      </div>
+
+      <!-- SMALL — D365 CRM -->
+      <div class="bc reveal" data-cat="d365">
+        <div class="bc-status"><span class="status-dot status-live"></span>Live</div>
+        <div class="bc-top"><span class="bc-dom">Dynamics 365 · CRM</span><span class="bc-yr">2023</span></div>
+        <h3 class="bc-title">D365 Sales &amp; Customer Service</h3>
+        <p class="bc-desc">Implemented Dynamics 365 Sales and Customer Service for a 300-user retail business, replacing legacy CRM with AI-powered insights and Power Automate workflows.</p>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">300</span><span class="bcn-k">Users</span></div>
+          <div class="bcn"><span class="bcn-v">40%</span><span class="bcn-k">Faster Resolution</span></div>
+        </div>
+        <div class="bc-chips"><span>D365 Sales</span><span>Power Automate</span><span>AI Builder</span></div>
+      </div>
+
+      <!-- SMALL — Security -->
+      <div class="bc reveal" data-cat="security">
+        <div class="bc-status"><span class="status-dot status-live"></span>Live</div>
+        <div class="bc-top"><span class="bc-dom">Security · Zero Trust</span><span class="bc-yr">2023</span></div>
+        <h3 class="bc-title">Zero-Trust M365 Security Framework</h3>
+        <p class="bc-desc">Deployed Conditional Access policies, Microsoft Defender XDR, Purview compliance, and Privileged Identity Management for a financial services firm — achieving ISO 27001 certification.</p>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">ISO 27001</span><span class="bcn-k">Certified</span></div>
+          <div class="bcn"><span class="bcn-v">0</span><span class="bcn-k">Breaches</span></div>
+        </div>
+        <div class="bc-chips"><span>Defender XDR</span><span>Purview</span><span>PIM</span><span>Entra ID</span></div>
+      </div>
+
+      <!-- SMALL — Power Platform -->
+      <div class="bc reveal" data-cat="m365">
+        <div class="bc-status"><span class="status-dot status-build"></span>Ongoing</div>
+        <div class="bc-top"><span class="bc-dom">Power Platform · Automation</span><span class="bc-yr">2024</span></div>
+        <h3 class="bc-title">Power Platform Centre of Excellence</h3>
+        <p class="bc-desc">Built a Power Platform CoE for a logistics company — 120+ Power Apps, 200+ Power Automate flows, governance framework, and citizen developer training program.</p>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">120+</span><span class="bcn-k">Apps Built</span></div>
+          <div class="bcn"><span class="bcn-v">200+</span><span class="bcn-k">Flows</span></div>
+        </div>
+        <div class="bc-chips"><span>Power Apps</span><span>Power Automate</span><span>Power BI</span><span>CoE Kit</span></div>
+      </div>
+
+      <!-- SMALL — Azure DevOps -->
+      <div class="bc reveal" data-cat="azure">
+        <div class="bc-status"><span class="status-dot status-live"></span>Live</div>
+        <div class="bc-top"><span class="bc-dom">Azure DevOps · CI/CD</span><span class="bc-yr">2023</span></div>
+        <h3 class="bc-title">Azure DevOps Enterprise Pipeline</h3>
+        <p class="bc-desc">Designed enterprise Azure DevOps pipelines for 15 development teams — automated testing, container builds, infrastructure-as-code deployments, and security scanning gates.</p>
+        <div class="bc-nums">
+          <div class="bcn"><span class="bcn-v">15</span><span class="bcn-k">Teams</span></div>
+          <div class="bcn"><span class="bcn-v">75%</span><span class="bcn-k">Faster Deploys</span></div>
+        </div>
+        <div class="bc-chips"><span>Azure DevOps</span><span>Bicep</span><span>Docker</span><span>SonarQube</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TECH STACK
+══════════════════════════════════════════════ -->
+<section id="stack" class="section section-alt">
+  <div class="container">
+    <div class="eyebrow"><span class="ey-n">04</span><span class="ey-r"></span><span class="ey-t">Tech Stack</span></div>
+    <div class="sec-intro">
+      <h2 class="sec-h2">Tools I reach for</h2>
+      <p class="sec-p">Battle-tested technologies across cloud, frontend, backend, and DevOps.</p>
+    </div>
+    <div class="tool-grid">
+
+      <div class="tool-card reveal" style="--tc: #0ea5e9">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.8"/><path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Microsoft Azure</h4>
+            <span class="tool-level">Expert · 8 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:95%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>Azure AD / Entra ID</span><span>Azure IaaS / PaaS</span><span>Azure DevOps</span><span>Azure Kubernetes Service</span><span>Azure Monitor</span><span>Azure Bicep / ARM</span><span>Azure Virtual WAN</span><span>Azure Sentinel</span>
+        </div>
+      </div>
+
+      <div class="tool-card reveal" style="--tc: #38bdf8">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Microsoft 365</h4>
+            <span class="tool-level">Expert · 7 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:93%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>Microsoft Teams</span><span>SharePoint Online</span><span>OneDrive for Business</span><span>Exchange Online</span><span>Intune / Endpoint Manager</span><span>Viva Suite</span><span>Microsoft Purview</span><span>Microsoft Defender</span>
+        </div>
+      </div>
+
+      <div class="tool-card reveal" style="--tc: #a855f7">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Power Platform</h4>
+            <span class="tool-level">Expert · 6 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:90%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>Power Apps</span><span>Power Automate</span><span>Power BI</span><span>Power Virtual Agents</span><span>Power Pages</span><span>AI Builder</span><span>Dataverse</span><span>CoE Toolkit</span>
+        </div>
+      </div>
+
+      <div class="tool-card reveal" style="--tc: #fbbf24">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Dynamics 365</h4>
+            <span class="tool-level">Advanced · 5 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:85%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>D365 Sales</span><span>D365 Customer Service</span><span>D365 Field Service</span><span>D365 Finance</span><span>D365 Business Central</span><span>Customer Insights</span><span>Marketing Journeys</span><span>Model-driven Apps</span>
+        </div>
+      </div>
+
+      <div class="tool-card reveal" style="--tc: #34d399">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Security &amp; Compliance</h4>
+            <span class="tool-level">Expert · 7 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:91%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>Microsoft Defender XDR</span><span>Microsoft Sentinel</span><span>Conditional Access</span><span>Privileged Identity Management</span><span>Information Protection</span><span>eDiscovery &amp; Audit</span><span>Zero Trust Architecture</span><span>ISO 27001 / SOC 2</span>
+        </div>
+      </div>
+
+      <div class="tool-card reveal" style="--tc: #f472b6">
+        <div class="tool-header">
+          <div class="tool-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h4 class="tool-name">Fullstack Development</h4>
+            <span class="tool-level">Advanced · 6 yrs</span>
+          </div>
+          <div class="tool-bar-wrap"><div class="tool-bar" style="--tbw:82%"></div></div>
+        </div>
+        <div class="tool-items">
+          <span>React / Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python / FastAPI</span><span>Azure Functions</span><span>Logic Apps</span><span>SQL / Dataverse</span><span>REST &amp; Graph API</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="eyebrow"><span class="ey-n">05</span><span class="ey-r"></span><span class="ey-t">Contact</span></div>
+    <div class="contact-grid">
+      <div class="contact-l reveal">
+        <h2 class="contact-h2">Let's build something<br/><span class="text-gradient">extraordinary.</span></h2>
+        <p class="contact-p">Open to consulting engagements, architecture reviews, fractional CTO work, and select full-time roles. Response within 24 hours.</p>
+        <div class="contact-info-cards">
+          <div class="cic">
+            <div class="cic-icon" style="--ci:#34d399"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><span class="cic-l">Location</span><span class="cic-v">Bengaluru, Karnataka, India</span></div>
+          </div>
+          <div class="cic">
+            <div class="cic-icon" style="--ci:#38bdf8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 0110 2.18 2 2 0 0112 4v3a2 2 0 01-2 2 1 1 0 00-1 1v3a1 1 0 001 1 2 2 0 012 2z"/></svg></div>
+            <div><span class="cic-l">Phone</span><span class="cic-v">+91 98765 43210</span></div>
+          </div>
+          <div class="cic">
+            <div class="cic-icon" style="--ci:#fbbf24"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8,21 12,17 16,21"/><line x1="12" y1="17" x2="12" y2="3"/></svg></div>
+            <div><span class="cic-l">Availability</span><span class="cic-v">Open to Remote &amp; On-site Projects</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <div class="frow">
+          <div class="fw"><input type="text" id="fn" class="fi" placeholder=" " required/><label class="fl" for="fn">Your Name</label></div>
+          <div class="fw"><input type="email" id="fe" class="fi" placeholder=" " required/><label class="fl" for="fe">Email Address</label></div>
+        </div>
+        <div class="fw"><input type="text" id="fs" class="fi" placeholder=" "/><label class="fl" for="fs">Subject / Project type</label></div>
+        <div class="fw"><textarea id="fm" class="fi fi-ta" rows="5" placeholder=" " required></textarea><label class="fl" for="fm">Tell me about your project</label></div>
+        <button type="submit" class="btn-primary" id="sub-btn">
+          <span id="sub-txt">Send Message</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container footer-in">
+    <div class="f-brand">
+      <span class="f-logo">John Paul Joy</span>
+      <span class="f-tag">Cloud Solution Architect · Available globally</span>
+    </div>
+    <div class="f-socials">
+      <a href="https://linkedin.com/in/johnpauljoy" target="_blank" class="f-soc" title="LinkedIn" style="--fs-c:#0ea5e9">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/johnpauljoy" target="_blank" class="f-soc" title="GitHub" style="--fs-c:#e2e8f0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://twitter.com/johnpauljoy" target="_blank" class="f-soc" title="Twitter/X" style="--fs-c:#38bdf8">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        <span>Twitter</span>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#dfb5b0b7b1afbeaab3b5b0a69fbaa7beb2afb3baf1bcb0b2" class="f-soc" title="Email" style="--fs-c:#34d399">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Email</span>
+      </a>
+      <a href="https://wa.me/919876543210" target="_blank" class="f-soc" title="WhatsApp" style="--fs-c:#4ade80">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+    <div class="f-copy">
+      <span>© 2025 John Paul Joy — All rights reserved.</span>
+      <span class="f-built">Cloud Solution Architect · Bengaluru</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
